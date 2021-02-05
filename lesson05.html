@@ -70,6 +70,7 @@
             dy = -dy;
         }
         else if(y + dy > canvas.height-ballRadius) {
+            // 横軸がverの中にあれば跳ね返す
             if(x > paddleX && x < paddleX + paddleWidth) {
                 dy = -dy;
             }
